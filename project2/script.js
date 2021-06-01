@@ -7,12 +7,12 @@ const movieSelect = document.getElementById('movie');
 
 const ticketPrice = +movieSelect.Value;
 
-function updateSelectedCount();{
+function updateSelectedCount() {
     const selectedSeats = document.querySelectorAll('.row .seat.selected');
-    console.log(selectedSeats);
-}
-
-
+    const selectedSeatsCount = selectedSeats.length;
+    count.innerText = selectedSeatsCount;
+    total.innerText = selectedSeatsCount * ticketPrice;
+ }
 
 container.addEventListener('click' , e =>{
     if (e.target.classList.contains('seat') &&
