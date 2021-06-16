@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+*{
+    box-sizing: border-box;
+}
+:root {
+    --sucess-color: green;
+    --error-color: orangered;
+}
+body{
+    background-color:#2978b5;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(Apvm4t.jpg);
+    
+   
+    
+}
+.container{
+    background: white;
+    width: 600px;
+    border-radius: 10px;
+    height: 550px;
+    
+    
+}
+H2{
+    text-align: center;
+    margin-top: 30px;
+    color: #77acf1;
+   
+
+}
+
+.formcontrol{
+    
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.formcontrol label{
+    color: #022e57;
+   display: block;
+   margin-bottom: 8px;
+   margin-left: 35px;
+   color: #77acf1;
+
+}
+.formcontrol input{
+    border: 2px solid #ecf0f1;
+    border-radius: 8px;
+    display: block;
+    margin-left: 60px;
+    width: 75%;
+    padding: 11px;
+    font-size: 10px;
+    
+    
+}
+button{
+    display: block;
+    cursor: pointer;
+    width: 50%;
+    margin-left: 152px;
+    text-align: center;
+    height: 50%;
+    border:  3px solid #77acf1;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    background-color: #77acf1;
+}
+.formcontrol input:focus {
+    outline: 0;
+    border-color: #777;
+}
+
+.formcontrol.success input {
+    border-color: green;
+}
+
+.formcontrol.error input {
+    border-color: orangered;
+}
+
+.formcontrol small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+    
+}
+
+.formcontrol.error small {
+    visibility: visible;
+    margin-left: 60px;
+}
